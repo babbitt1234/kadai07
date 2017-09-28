@@ -17,8 +17,7 @@ $stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, name, url, coment,
 indate)
 VALUES(NULL, :name, :url, :coment, sysdate())");
 
-//$stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, name, url, coment,
-//indate, upfile)
+//$stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, name, url, coment, indate, upfile)
 //VALUES(NULL, :name, :url, :coment, sysdate(), :upfile)");
 
 //データを渡す

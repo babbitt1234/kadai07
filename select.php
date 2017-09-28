@@ -68,34 +68,26 @@ if($status==false){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>書籍のアーカイブ</title>
 <link href="css/select.css" rel="stylesheet">
-<!--
-<link rel="stylesheet" href="css/range.css">
-<link href="css/bootstrap.min.css" rel="stylesheet">
--->
 <style>div{padding: 10px;font-size:16px;}</style>
 </head>
-<body id="main">
-<!-- Head[Start] -->
+<body>
+
 <header>
-  <nav class="navbar navbar-default">
+  <nav>
     <div class="container-fluid">
-      <div class="navbar-header">
-      書籍のアーカイブ
-      </div>
+      <div class="tittle">書籍のアーカイブ</div>
     </div>
   </nav>
 </header>
-<!-- Head[End] -->
-
-<!-- Main[Start] -->
 
 <!--
 <div>
     <div class="container jumbotron"><?=$view?></div>
 </div>
 -->
-<legend>登録一覧</legend>
-<table border="1">
+
+<p class="list">登録一覧</p>
+<table>
 <tr>
 <th>時間</th>
 <th>書籍の名前</th>
@@ -105,7 +97,7 @@ if($status==false){
 </tr>
 <?=$view?>
 </table>
-<!-- Main[End] -->
+
 <div>※タイトル（書籍の名前）をクリックすると内容を変更できます</div>
 <div><a class="navbar-brand" href="index.php">登録画面に戻る</a></div>
 

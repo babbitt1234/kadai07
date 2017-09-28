@@ -33,23 +33,18 @@ if($status==false){
   <meta charset="UTF-8">
   <title>書籍のアーカイブ</title>
   <link href="css/u_view.css" rel="stylesheet">
-<!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
   <style>div{padding: 10px;font-size:16px;}</style>
 </head>
 <body>
 
-<!-- Head[Start] -->
 <header>
-  <nav class="navbar navbar-default">
+  <nav>
     <div class="container-fluid">
-    <div class="navbar-header navbar-brand" >書籍のアーカイブ</div>
+    <div class="tittle">書籍のアーカイブ</div>
     </div>
   </nav>
 </header>
-<!-- Head[End] -->
 
-
-<!-- Main[Start] -->
 <form method="post" action="update.php">
   <div class="jumbotron">
    <fieldset>
@@ -58,13 +53,11 @@ if($status==false){
      <label>書籍のURL：<input type="text" name="url" value="<?=$row["url"]?>"></label><br>
      <label>読んだ感想•コメント<textArea name="coment" rows="4" cols="40"><?=$row["coment"]?></textArea></label><br>
      <input type="hidden" name="id" value="<?=$row["id"]?>">
-     <input type="submit" value="送信">
+     <input type="submit" value="変更">
     </fieldset>
     <div><a class="navbar-brand" href="select.php">登録一覧に戻る</a></div>
   </div>
 </form>
-<!-- Main[End] -->
-
 
 </body>
 </html>

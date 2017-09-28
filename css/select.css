@@ -5,3 +5,30 @@ body{
 .container-fluid{
     background-color: #ffc0cb;
 }
+
+.tittle{
+    font-size: 25px;
+}
+
+.list{
+    font-size: 20px;
+}
+
+table{
+    width: 750px;
+}
+th,td{
+    padding: 20px 15px;
+}
+th{
+    width: 25%;
+    background-color: #ddd;
+    border-right: 1px dotted #fff;
+}
+th.border-none{
+    border-right: none;
+}
+td{
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+}
