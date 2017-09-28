@@ -31,8 +31,8 @@ if($status==false){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>本のブックマーク</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>書籍のアーカイブ</title>
+<!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
   <style>div{padding: 10px;font-size:16px;}</style>
 </head>
 <body>
@@ -41,7 +41,7 @@ if($status==false){
 <header>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-    <div class="navbar-header"><a class="navbar-brand" href="select.php">ブックマークデータ一覧</a></div>
+    <div class="navbar-header navbar-brand" >書籍のアーカイブ</div>
     </div>
   </nav>
 </header>
@@ -52,13 +52,14 @@ if($status==false){
 <form method="post" action="update.php">
   <div class="jumbotron">
    <fieldset>
-    <legend>ブックマーク</legend>
-     <label>書籍名：<input type="text" name="name" value="<?=$row["name"]?>"></label><br>
-     <label>書籍URL：<input type="text" name="url" value="<?=$row["url"]?>"></label><br>
-     <label>書籍コメント<textArea name="coment" rows="4" cols="40"><?=$row["coment"]?></textArea></label><br>
+    <legend>内容変更</legend>
+     <label>書籍の名前：<input type="text" name="name" value="<?=$row["name"]?>"></label><br>
+     <label>書籍のURL：<input type="text" name="url" value="<?=$row["url"]?>"></label><br>
+     <label>読んだ感想•コメント<textArea name="coment" rows="4" cols="40"><?=$row["coment"]?></textArea></label><br>
      <input type="hidden" name="id" value="<?=$row["id"]?>">
      <input type="submit" value="送信">
     </fieldset>
+    <div><a class="navbar-brand" href="select.php">登録一覧に戻る</a></div>
   </div>
 </form>
 <!-- Main[End] -->
